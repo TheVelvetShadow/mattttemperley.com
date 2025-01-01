@@ -1,0 +1,24 @@
+<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <g clip-path="url(#a)">
+   <rect width="32" height="32" rx="16" fill="#017cee"/>
+   <path d="M8 24.5l10.1-10.4c.1-.1.1-.2 0-.3-.6-.9-1.8-1-2.2-1.6-1.2-1.7-1.6-2.7-2.1-2.6l-.1.1-3.7 3.8c-2.1 2.2-2.4 6.9-2.5 10.9.1.1.4.2.5.1z" fill="#017cee"/>
+   <path d="M24 24.2l-10.4-10.1c-.1-.1-.2-.1-.3 0-.9.6-1 1.8-1.6 2.2-1.7 1.2-2.7 1.6-2.6 2.1l.1.1 3.8 3.7c2.2 2.1 6.9 2.4 10.9 2.5.1-.1.2-.4.1-.5z" fill="#00ad46"/>
+   <path d="M8 8l10.4 10.1c.1.1.2.1.3 0 .9-.6 1-1.8 1.6-2.2 1.7-1.2 2.7-1.6 2.6-2.1l-.1-.1-3.8-3.7c-2.2-2.1-6.9-2.4-10.9-2.5-.1.1-.2.4-.1.5z" fill="#e43921"/>
+   <circle cx="16" cy="16" r=".5" fill="#4a4848"/>
+   <path fill="#fff" fill-opacity=".1" d="M0 23h32v1H0z"/>
+   <path fill="#fff" fill-opacity=".1" d="M5 0v32H4V0z"/>
+   <path fill="#fff" fill-opacity=".1" d="M0 8h32v1H0z"/>
+   <path fill="url(#c)" d="M0 23h32v1H0z"/>
+   <path fill="#fff" fill-opacity=".1" d="M28 0v32h-1V0z"/>
+ </g>
+ <defs>
+   <linearGradient id="c" x1="1.5" y1="23.5" x2="30.5" y2="23.5" gradientUnits="userSpaceOnUse">
+     <stop stop-color="#fff" stop-opacity="0"/>
+     <stop offset=".486" stop-color="#fff"/>
+     <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+   </linearGradient>
+   <clipPath id="a">
+     <rect width="32" height="32" rx="16" fill="#fff"/>
+   </clipPath>
+ </defs>
+</svg>
