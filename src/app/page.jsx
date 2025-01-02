@@ -20,6 +20,8 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/RedditDataEngineeringslice.jpg'
 import image4 from '@/images/photos/alien_invasion.png'
 import image5 from '@/images/photos/courseninja.jpg'
+import meclogo from '@/images/photos/mec-logo.jpg'
+import tvslogo from '@/images/photos/tvs-logo.png'
 import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -174,36 +176,30 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'The Velvet Shadow',
+      title: 'Owner',
+      logo: tvslogo,
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
+      company: 'Manchester Electronic Collective',
+      title: 'Co-Founder',
+      logo: meclogo,
       start: '2014',
-      end: '2019',
+      end: 'Present',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Course Ninja',
+      title: 'Co-Founder',
+      logo: image5,
+      start: '2022',
+      end: 'Present',
     },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
-    },
+    
   ]
 
   return (
