@@ -3,10 +3,12 @@ import clsx from 'clsx'
 
 function ChevronRightIcon(props) {
   return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" style={{ stroke: 'none' }} {...props}>
       <path
         d="M6.75 5.75 9.25 8l-2.5 2.25"
-        strokeWidth="1.5"
+        strokeWidth="0"
+        stroke='None'
+        fill="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -63,7 +65,7 @@ Card.Cta = function CardCta({ children }) {
       className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
     >
       {children}
-      <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+      <ChevronRightIcon className="ml-1 h-4 w-4" />
     </div>
   )
 }
