@@ -2,17 +2,13 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import AWSlogo from '@/images/logos/aws.svg'
+import awslogo from '@/images/logos/aws-logo.png'
 import DockerLogo from '@/images/logos/docker.svg'
 import airflowlogo from '@/images/logos/airflow.svg'
-import postgres from '@/images/logos/postgres.svg'
+import postgres from '@/images/logos/postgres.png'
 import python from '@/images/logos/python.svg'
 import courseninja from '@/images/photos/courseninja.jpg'
 import meclogo from '@/images/photos/mec-logo.jpg'
-
-
-
 
 
 const projects = [
@@ -23,10 +19,9 @@ const projects = [
     link: { href: 'https://github.com/TheVelvetShadow/RedditDataEngineering', label: 'github.com' },
     logos: [
       { src: DockerLogo, alt: 'Docker' },
-      { src: AWSlogo, alt: 'Amazon Web Services' },
+      { src: awslogo, alt: 'Amazon Web Services' },
       { src: airflowlogo, alt: 'Apache Airflow' },
       { src: postgres, alt: 'Postgres' }
-    
 
     ]
   },
@@ -50,14 +45,7 @@ const projects = [
       'The classic arcade game Alien Invasion built using Python.',
     link: { href: 'https://github.com/TheVelvetShadow/alien_invasion', label: 'github.com' },
     logos: [{ src: python, alt: 'Python' }],
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logos: [{ src: logoAnimaginary, alt: 'Animaginary' }],
-  },
+  }
 ]
 
 function LinkIcon(props) {
@@ -93,7 +81,7 @@ export default function Projects() {
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    className="h-10 w-10 object-contain"
+                    className="h-10 w-10 object-contain bg-white"
                     unoptimized
                   />
                 </div>

@@ -13,7 +13,7 @@ import {
 } from '@/components/SocialIcons'
 
 import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
+import image2 from '@/images/photos/course-ninja-homepage.png'
 import image3 from '@/images/photos/RedditDataEngineeringslice.jpg'
 import image4 from '@/images/photos/alien_invasion.png'
 import image5 from '@/images/photos/courseninja.jpg'
@@ -256,7 +256,7 @@ export default async function Home() {
             Data Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Matt, a data engineer and entrepreneur based in Manchester. 
+            I’m Matt, a data engineer and business owner based in Manchester. 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="https://x.com/matt_temperley" aria-label="Follow on X" icon={XIcon} />
