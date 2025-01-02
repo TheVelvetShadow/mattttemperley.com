@@ -11,10 +11,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/RedditDataEngineeringslice.jpg'
@@ -147,8 +144,8 @@ function Role({ role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 overflow-hidden">
+        <Image src={role.logo} alt="" className="h-10 w-10 object-contain" unoptimized />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -189,14 +186,14 @@ function Resume() {
       company: 'Manchester Electronic Collective',
       title: 'Co-Founder',
       logo: meclogo,
-      start: '2014',
+      start: '2022',
       end: 'Present',
     },
     {
       company: 'Course Ninja',
       title: 'Co-Founder',
       logo: image5,
-      start: '2022',
+      start: '2023',
       end: 'Present',
     },
     
@@ -259,9 +256,7 @@ export default async function Home() {
             Data Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Matt, a data engineer and entrepreneur based in Manchester. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Matt, a data engineer and entrepreneur based in Manchester. 
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="https://x.com/matt_temperley" aria-label="Follow on X" icon={XIcon} />

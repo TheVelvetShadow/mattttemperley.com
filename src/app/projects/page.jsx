@@ -9,6 +9,7 @@ import airflowlogo from '@/images/logos/airflow.svg'
 import postgres from '@/images/logos/postgres.svg'
 import python from '@/images/logos/python.svg'
 import courseninja from '@/images/photos/courseninja.jpg'
+import meclogo from '@/images/photos/mec-logo.jpg'
 
 
 
@@ -34,7 +35,7 @@ const projects = [
     description:
       'MEC Artist website. Organising database of artists for Bleep',
     link: { href: 'https://electroniccollective.co.uk', label: 'electroniccollective.co.uk' },
-    logos: [{ src: logoAnimaginary, alt: 'Animaginary' }],
+    logos: [{ src: meclogo, alt: 'Manchester Electronic Collective' }],
   },
   {
     name: 'Course Ninja',
@@ -86,13 +87,13 @@ export default function Projects() {
               {project.logos.map((logo, index) => (
                 <div
                   key={index}
-                  className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
+                  className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 overflow-hidden"
                   // className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
                 >
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    className="h-9 w-9"
+                    className="h-10 w-10 object-contain"
                     unoptimized
                   />
                 </div>
